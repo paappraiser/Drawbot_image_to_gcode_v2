@@ -1,4 +1,5 @@
-language: java
-install: ant deps
-before_install:
-  - cd java
+{
+  "language": "groovy",
+  "jdk": "oraclejdk7",
+  "script": "./grailsw refresh-dependencies && ./grailsw test-app"
+}
